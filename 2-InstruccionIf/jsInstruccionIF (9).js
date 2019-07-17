@@ -3,12 +3,10 @@ function mostrar()
 
 {
 
-	var random;
-	parseInt(document.getElementById("mostrar()")=random;
-
-
+	var random = Math.floor(Math.random()*10+1);
 	
-while (random>=1 && random <=10)
+
+
 alert (random);
 
 	
