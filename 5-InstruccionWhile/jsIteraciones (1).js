@@ -1,7 +1,7 @@
 function mostrar()
 {
     var control=0
-	while (control <11){
+	while (control <10){
 
 
 		control++;
