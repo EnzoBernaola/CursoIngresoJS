@@ -1,29 +1,35 @@
 function mostrar()
 {
 	var acumulador;
-	var suma=0;
-	var contador;
-	contador=parseInt(prompt("Ingrese la cantidad de numeros a sumar"));
-	document.getElementById('promedio').value=suma/contador
-	do { 
-
+	var suma;
+	var seguir;
+	var contador=0;
+	
+     do{
 
 	acumulador=parseInt(prompt ("Ingrese un numero"))
-	
+
 	suma=suma+acumulador
-	
 
-	contador--
-
+	seguir=prompt("Quiere ingresar otro numero?")
 
 
+	while(seguir!=="si" && seguir!=="no"){
+
+	seguir=prompt("Ingrese s para continuar o n para finalizar")
 	}
 
-	while(contador>0) 
 
-	document.getElementById('suma').value=suma;
+	contador++
 	
 
+
+
+	} while (seguir=="si");
+
+	document.getElementById('suma').value=suma;
+
+	document.getElementById('promedio').value=acumulador/contado
 
 
 
